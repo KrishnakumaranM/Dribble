@@ -30,247 +30,145 @@ image.html
 ```
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marvel Movies Homepage</title>
+  <title>Inspiration Hub</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      line-height: 1.6;
-    }
-    .navbar {
-      background-color: #202020;
-    }
-    .hero {
-      background: linear-gradient(135deg, #ff0000, #800000);
-      padding: 7rem 1rem;
-      color: white;
-    }
-    footer {
-      background: linear-gradient(135deg, #101010, #202020);
-      padding: 3rem 1rem;
-      color: #ccc;
-    }
-    footer a {
-      color: #ff0000;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-    .section {
-      padding: 4rem 1rem;
-    }
-    .movie-card img {
-      border-radius: 0.5rem;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
-    .movie-card img:hover {
-      transform: scale(1.05);
-    }
-    .movie-card p {
-      font-weight: bold;
-      margin-top: 0.5rem;
-    }
-    .hero-card {
-      background-color: #101010;
-      color: white;
-      padding: 2rem;
-      border-radius: 0.5rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .hero-card:hover {
-      background-color: #202020;
-    }
-    .join-form input, .join-form textarea {
-      margin-bottom: 1rem;
-    }
-    .join-form button {
-      background-color: #ff0000;
-      color: white;
-      border: none;
-    }
-    .join-form button:hover {
-      background-color: #cc0000;
-    }
-  </style>
 </head>
-<body class="bg-light">
+
+<body class="bg-dark text-white">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand fw-bold" href="#">Inspiration Hub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#movies">Movies</a></li>
-          <li class="nav-item"><a class="nav-link" href="#heroes">Heroes</a></li>
-          <li class="nav-item"><a class="nav-link" href="#villains">Villains</a></li>
-          <li class="nav-item"><a class="nav-link" href="#fan-club">Join the Fan Club</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#explore">Explore</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#creativity">Creativity</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#ideas">Ideas</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header id="home" class="text-center text-white hero">
-    <h1>Step Into a Universe of Endless Adventures</h1>
-    <p>Discover the legends, unravel the mysteries, and relive the battles that define Marvel’s legacy.</p>
-  </header>
+  <!-- Main Content -->
+  <div class="container py-5">
+    <h2 class="text-center text-light fw-bold mb-4" id="explore">Explore Your Next Inspiration</h2>
+    <p class="text-center text-secondary">Discover amazing ideas and projects that combine technology and creativity to inspire you every day.</p>
 
-  <!-- Movies Section -->
-  <section id="movies" class="section bg-white">
-    <div class="container">
-      <h2 class="text-danger text-center mb-4">Marvel's Greatest Movies</h2>
-      <div class="row text-center">
-        <div class="col-md-4 movie-card">
-          <img src="ironman.jpeg" class="img-fluid" alt="Iron Man Movie Poster">
-          <p>Iron Man</p>
-        </div>
-        <div class="col-md-4 movie-card">
-          <img src="endgame.jpeg" class="img-fluid" alt="The Avengers Movie Poster">
-          <p>The Avengers</p>
-        </div>
-        <div class="col-md-4 movie-card">
-          <img src="blackpanter copy.jpeg" class="img-fluid" alt="Black Panther Movie Poster">
-          <p>Black Panther</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <div class="row gy-4">
 
-  <!-- Heroes Section -->
-  <section id="heroes" class="section bg-light">
-    <div class="container">
-      <h2 class="text-danger text-center mb-4">Meet the Heroes</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="hero-card text-center">
-            <h3>Iron Man</h3>
-            <p>Genius. Billionaire. Philanthropist.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="hero-card text-center">
-            <h3>Black Panther</h3>
-            <p>Wakanda Forever!</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="hero-card text-center">
-            <h3>Spider-Man</h3>
-            <p>Friendly Neighborhood Hero.</p>
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card bg-secondary text-white shadow-sm">
+          <img src="naturephotography.jpeg" class="card-img-top" alt="Nature Photography">
+          <div class="card-body">
+            <h5 class="card-title">Nature Photography</h5>
+            <p class="card-text">Immerse yourself in breathtaking landscapes and wildlife captured beautifully.</p>
+            <div class="d-flex justify-content-between small">
+              <span>7,000 views</span>
+              <span>500 likes</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Villains Section -->
-  <section id="villains" class="section bg-dark text-white">
-    <div class="container">
-      <h2 class="text-danger text-center mb-4">Infamous Villains</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="hero-card text-center">
-            <h3>Thanos</h3>
-            <p>The Mad Titan.</p>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card bg-secondary text-white shadow-sm">
+          <img src="Harmony in Progress_ A Vision of an Eco-Friendly Future.jpeg" class="card-img-top" alt="Futuristic Architecture">
+          <div class="card-body">
+            <h5 class="card-title">Futuristic Architecture</h5>
+            <p class="card-text">Explore bold designs and structures that define the future of living.</p>
+            <div class="d-flex justify-content-between small">
+              <span>6,200 views</span>
+              <span>420 likes</span>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="hero-card text-center">
-            <h3>Loki</h3>
-            <p>The God of Mischief.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card bg-secondary text-white shadow-sm">
+          <img src="Space Travel Phone Wallpaper - Digitally Created Art.jpeg" class="card-img-top" alt="Digital Art">
+          <div class="card-body">
+            <h5 class="card-title">Digital Art</h5>
+            <p class="card-text">Dive into colorful and abstract creations crafted by digital artists worldwide.</p>
+            <div class="d-flex justify-content-between small">
+              <span>5,800 views</span>
+              <span>380 likes</span>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="hero-card text-center">
-            <h3>Green Goblin</h3>
-            <p>Spider-Man's Nemesis.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-4">
+        <div class="card bg-secondary text-white shadow-sm">
+          <img src="Artificial Gravity Experiment in Orbit _ Space Experiment in Orbit _ Fact Blizz.jpeg" class="card-img-top" alt="Space Exploration">
+          <div class="card-body">
+            <h5 class="card-title">Space Exploration</h5>
+            <p class="card-text">Uncover new horizons with the latest advancements in space technology.</p>
+            <div class="d-flex justify-content-between small">
+              <span>5,200 views</span>
+              <span>320 likes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-md-4">
+        <div class="card bg-secondary text-white shadow-sm">
+          <img src="17 Luxe Home Office Ideas That Exude Elegance.jpeg" class="card-img-top" alt="Creative Workspaces">
+          <div class="card-body">
+            <h5 class="card-title">Creative Workspaces</h5>
+            <p class="card-text">Discover beautifully designed spaces that enhance productivity and creativity.</p>
+            <div class="d-flex justify-content-between small">
+              <span>4,900 views</span>
+              <span>300 likes</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Join the Fan Club Section -->
-  <section id="fan-club" class="section bg-white">
-    <div class="container">
-      <h2 class="text-danger text-center mb-4">Join the Fan Club</h2>
-      <form class="join-form">
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Enter your name">
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter your email">
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="3" placeholder="Why do you love Marvel?"></textarea>
-        </div>
-        <button type="submit" class="btn">Join Now</button>
-      </form>
-    </div>
-  </section>
+  </div>
 
   <!-- Footer -->
-  <footer class="text-white text-center">
-    <p>&copy; 2024 Designed and Developed by M Krishna Kumaran</p>
-    <p><a href="#" class="text-decoration-none">Privacy Policy</a> | <a href="#" class="text-decoration-none">Terms of Service</a></p>
-    <p>Follow us on <a href="#">Twitter</a>, <a href="#">Facebook</a>, and <a href="#">Instagram</a></p>
+  <footer class="bg-dark text-center text-light py-4">
+    <p>&copy; 2024 Inspiration Hub. All Rights Reserved.</p>
+    <p>
+      <a href="#" class="text-white text-decoration-none">Privacy Policy</a> | 
+      <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+    </p>
+    <p>Follow us on 
+      <a href="#" class="text-white text-decoration-none">Twitter</a>, 
+      <a href="#" class="text-white text-decoration-none">LinkedIn</a>, and 
+      <a href="#" class="text-white text-decoration-none">Instagram</a>.
+    </p>
   </footer>
 
-  <!-- Back to Top Button -->
-  <button id="backToTop" onclick="scrollToTop()">&uarr;</button>
-
-  <script>
-    // Smooth Scrolling
-    document.querySelectorAll('.nav-link').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-
-    // Show Back to Top Button
-    const backToTop = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 200) {
-        backToTop.style.display = 'flex';
-      } else {
-        backToTop.style.display = 'none';
-      }
-    });
-
-    // Scroll to Top Function
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
-
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
+
 ```
 
 
 ## OUTPUT:
-![Screenshot (53)](https://github.com/user-attachments/assets/63100416-d2ff-41c1-a69b-3ceacab9207a)
-![Screenshot (54)](https://github.com/user-attachments/assets/4393e3ba-202e-43c4-96c5-94350542a419)
-![Screenshot (55)](https://github.com/user-attachments/assets/1b598b27-0f86-4b57-90c7-426db104a714)
-
-
-
+![Screenshot (57)](https://github.com/user-attachments/assets/d93f1ce8-5714-46f8-8851-b73d651f8212)
+![Screenshot (58)](https://github.com/user-attachments/assets/c6826472-22b6-4bc4-8ee6-84f5acdf64ee)
+![Screenshot (59)](https://github.com/user-attachments/assets/9b66e297-d3dd-4a76-9b1a-0a630e03e779)
 
 
 ## RESULT:
