@@ -1,4 +1,4 @@
-![Screenshot (60)](https://github.com/user-attachments/assets/0d937fb1-0bda-4a85-9bfd-a327378cc40d)# Project Responsive Web Design using Bootstrap
+# Project Responsive Web Design using Bootstrap
 ## Date:24/12/24
 
 ## AIM:
